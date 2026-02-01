@@ -25,6 +25,11 @@ body {
 
 header, ul {
     display: flex;
+    flex-wrap: wrap;
+}
+
+header > ul > li {
+    margin: 1rem 0.5rem;
 }
 
 header {
@@ -146,6 +151,8 @@ main div {
 footer {
     color: white;
     text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 /* Tipografia */
