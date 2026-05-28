@@ -53,17 +53,14 @@ header h1 {
 
 #resumo-perfil {
     grid-area: resumo;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 80%;
     text-align: center;
-    margin-left: 20%;
+    margin: 2rem auto;
     background-color: #6c757d;
     border-radius: 10px;
-    padding: 30px;
+    padding: 1rem 2rem;
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.3;
 }
 
 #resumo-perfil p {
@@ -75,10 +72,10 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20%;
+    margin: 2rem auto;
     background-color: #6c757d;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 10rem;
+    padding: 2rem;
 }
 
 main {
@@ -87,14 +84,23 @@ main {
     padding: 2rem;
 }
 
+main h2 {
+    background-color: #6c757d;
+    max-width: 50%;
+    padding: 0.8rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 
 #foto-perfil {
-    grid-area: foto-perfil;
     max-width: 300px;
     max-height: 250px;
     border-radius: 100%;
-    border: 4px solid #0051ff;
-    box-shadow: 0 0 15px rgb(7, 40, 231);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px 5px rgb(255, 255, 255);
 }
 
 #projetos {
@@ -115,8 +121,8 @@ main {
 
 #projetos div:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgb(7, 40, 231);
-    border-color: #0051ff;
+    box-shadow: 0 10px 20px rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
 }
 
 ul {
@@ -135,7 +141,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #03055eb2;
+    background-color: #ffffffb2;
     border-radius: 5px;
 }
 
@@ -171,8 +177,8 @@ p a {
     text-decoration: none;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #02c39a;
-    color: black;
+    background-color: #343a40;
+    color: whitesmoke;
     border-radius: 5px;
     font-weight: bold;
     margin-top: 10px;
@@ -180,7 +186,7 @@ p a {
 }
 
 p a:hover {
-    background-color: #028090;
+    background-color: whitesmoke;
     transform: scale(1.05);
     color: black;
 }
@@ -197,12 +203,6 @@ p a:hover {
             'foto-perfil'
             'principal';
     }
-    
-    #resumo-perfil, #sec-perfil {
-        padding: 20px 10px;
-        margin: auto 0;
-    }
-
     
     header {
         flex-direction: column;
