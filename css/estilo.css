@@ -149,6 +149,10 @@ li a:hover {
     border-color: rgb(255, 255, 255);
 }
 
+#projetos div span img {
+    width: 1rem;
+}
+
 .capa-codigo {
     display: flex;
     object-fit: cover;
