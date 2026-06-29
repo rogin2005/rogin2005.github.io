@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 
@@ -13,14 +14,24 @@
     <div class="container"> <!-- inicio container -->
 
         <header>
-            <h1>Portfolio</h1>
-            <ul>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#resumo-perfil">Sobre mim</a></li>
-                <li><a href="https://github.com/rogin2005" target="_blank" rel="next">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/roger-ferreira-saraiva-0847b22b3/" target="_blank"
-                        rel="next">Linkedin</a></li>
-            </ul>
+
+            <div style="display: flex; gap: 10px;">
+                <img src="img/logo-perfil.png" width="70" height="70" alt="logo-perfil">
+                <h2>Roger Dev</h2>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#resumo-perfil">Sobre mim</a></li>
+                    <li><a href="https://github.com/rogin2005" target="_blank" rel="next">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/roger-ferreira-saraiva-0847b22b3/" target="_blank"
+                            rel="next">Linkedin</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn-mobile" aria-label="Menu">☰</button>
+
         </header>
 
 
@@ -55,13 +66,66 @@
 
             </section>
 
-        </div>
+            <section class="services" id="servicos">
 
+                <div class="container-serv">
+
+                    <h2 class="section-title">Meus Serviços</h2>
+                    <p class="section-subtitle">Conheça as soluções que ofereço para alavancar o seu negócio</p>
+
+                    <div class="services-grid">
+
+                        <!-- Card 1 -->
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Desenvolvimento Web</h3>
+                            <p>
+                                Criação de sites e aplicações web responsivas, com foco em performance,
+                                usabilidade e as melhores práticas do mercado.
+                            </p>
+                            <a href="#" class="service-link">Saiba mais →</a>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3>UI/UX Design</h3>
+                            <p>
+                                Design de interfaces centrado no usuário, garantindo uma experiência
+                                intuitiva, agradável e que converte visitantes em clientes.
+                            </p>
+                            <a href="#" class="service-link">Saiba mais →</a>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Consultoria Digital</h3>
+                            <p>
+                                Análise e otimização da presença online, estratégias de SEO e
+                                marketing digital para impulsionar seus resultados.
+                            </p>
+                            <a href="#" class="service-link">Saiba mais →</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
 
 
         <main>
 
-            <h2>Meus Projetos</h2>
+            <h2>Projetos</h2>
 
             <section id="projetos">
 
@@ -69,7 +133,8 @@
                     <img src="img/screenshot-aventura-f.png" alt="capa projeto" class="capa-codigo">
                     <h3>Aventura na Floresta</h3>
                     <p>Projeto aventura na floresta feito com React.Js usando lógica MDP de decisões da história</p>
-                    <p><a href="https://aventura-floresta.vercel.app/" target="_blank" rel="next">Link view <span><img src="img/img-link.png" alt="img-link"></span></a>
+                    <p><a href="https://aventura-floresta.vercel.app/" target="_blank" rel="next">Link view <span><img
+                                    src="img/img-link.png" alt="img-link"></span></a>
                     </p>
                 </div>
 
@@ -118,9 +183,11 @@
 
         <p>&copy; 2026 - Portfólio em constante evolução</p>
         <p>Contato: rogerferreirasaraiva@gmail.com</p>
-        <p style="font-size: 0.9em; opacity: 0.8;">&#x1F680; Atualizado em Maio/2026</p>
+        <p style="font-size: 0.9em; opacity: 0.8;">&#x1F680; Atualizado em Junho/2026</p>
 
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
