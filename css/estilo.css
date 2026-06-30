@@ -103,7 +103,8 @@ nav {
   max-width: 80%;
   padding: 80px 20px;
   margin: 0 auto;
-  background-color: #f8f9fa; /* fundo claro, altere conforme seu tema */
+  border-radius: 10px;
+  background-color: #0077b6; /* fundo claro, altere conforme seu tema */
 }
 
 .container-serv {
@@ -115,13 +116,13 @@ nav {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 0.5rem;
-  color: #222;
+  color: black;
 }
 
 .section-subtitle {
   text-align: center;
   font-size: 1.1rem;
-  color: #666;
+  color: black;
   margin-bottom: 3rem;
 }
 
@@ -131,11 +132,12 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin-top: 4rem;
 }
 
 /* Cada card */
 .service-card {
-  background: #ffffff;
+  background: #48cae4;
   border-radius: 16px;
   padding: 40px 30px;
   flex: 1 1 280px; /* base de 280px, cresce e encolhe */
@@ -182,7 +184,7 @@ nav {
 
 /* Descrição */
 .service-card p {
-  color: #555;
+  color: black;
   line-height: 1.6;
   margin-bottom: 1.8rem;
   flex-grow: 1;
