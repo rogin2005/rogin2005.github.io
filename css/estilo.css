@@ -240,6 +240,40 @@ main h2 {
   align-content: center;
 }
 
+#templates {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+#templates div {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  max-height: 390px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #00b4d8;
+  border: 1px solid #333;
+  border-radius: 10px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+#templates div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+#templates div span img {
+  width: 1rem;
+}
+
 ul {
   list-style-type: none;
   align-self: center;
@@ -315,7 +349,7 @@ body {
 p a {
   text-decoration: none;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 9px 18px;
   background-color: #343a40;
   color: whitesmoke;
   border-radius: 5px;
@@ -325,6 +359,24 @@ p a {
 }
 
 p a:hover {
+  background-color: whitesmoke;
+  transform: scale(1.05);
+  color: black;
+}
+
+p .btnzap {
+  text-decoration: none;
+  display: inline-block;
+  padding: 9px 18px;
+  background-color: #189d0e;
+  color: whitesmoke;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+
+p .btnzap:hover {
   background-color: whitesmoke;
   transform: scale(1.05);
   color: black;
@@ -419,6 +471,10 @@ p a:hover {
   }
 
   #projetos div {
+    width: 210px;
+  }
+
+  #templates div {
     width: 210px;
   }
 
