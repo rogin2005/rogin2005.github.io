@@ -1,275 +1,502 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilo.css">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Roger — Desenvolvedor Front-End. Criação de sites, automações e suporte remoto." />
+    <title>Roger | Desenvolvedor Front-End</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
 </head>
+  <body>
+    <!-- ===== HEADER / NAV ===== -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#inicio" class="nav__logo">Roger<span>.</span></a>
 
-<body>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#inicio" class="nav__link active">Início</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#projetos" class="nav__link">Projetos</a></li>
+          <li><a href="#templates" class="nav__link">Templates</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
 
-    <div class="container"> <!-- inicio container -->
+        <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
 
-        <header>
+    <main>
+      <!-- ===== HERO / INÍCIO ===== -->
+      <section class="hero section" id="inicio">
+        <div class="container hero__inner">
+          <p class="hero__greeting reveal">Olá, eu sou</p>
+          <h1 class="hero__title reveal">Roger</h1>
+          <h2 class="hero__subtitle reveal">Desenvolvedor <span class="accent">Front-End</span></h2>
+          <p class="hero__desc reveal">
+            Construo interfaces modernas, rápidas e responsivas. Foco em
+            experiências digitais que unem design impecável e código limpo.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+            <a href="#contato" class="btn btn--ghost">Contato</a>
+          </div>
+          <div class="hero__scroll reveal">
+            <span></span>
+            <p>Role para explorar</p>
+          </div>
+        </div>
+        <div class="hero__bg" aria-hidden="true">
+          <div class="hero__glow hero__glow--1"></div>
+          <div class="hero__glow hero__glow--2"></div>
+        </div>
+      </section>
 
-            <div style="display: flex; gap: 10px;">
-                <img src="img/logo-perfil.png" width="70" height="70" alt="logo-perfil">
-                <h2>Roger Dev</h2>
+      <!-- ===== SOBRE ===== -->
+      <section class="section about" id="sobre">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__tag">01 — Sobre Mim</span>
+            <h2 class="section__title">Minha trajetória</h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__text reveal">
+              <p>
+                Sou um desenvolvedor front-end apaixonado por transformar ideias em
+                produtos digitais reais. Minha jornada começou com HTML, CSS e
+                JavaScript puro — fundamentos que levo a sério até hoje — e evoluiu
+                para a busca constante de melhores práticas, performance e
+                acessibilidade.
+              </p>
+              <p>
+                Atualmente estudo <strong>React</strong> e <strong>Next.js</strong>
+                para construir aplicações ainda mais dinâmicas e escaláveis, enquanto
+                aprimoro meu domínio em automações e ferramentas que facilitam o
+                dia a dia de quem usa a web.
+              </p>
             </div>
 
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#resumo-perfil">Sobre mim</a></li>
-                    <li><a href="https://github.com/rogin2005" target="_blank" rel="next">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/roger-ferreira-saraiva-0847b22b3/" target="_blank"
-                            rel="next">Linkedin</a></li>
-                </ul>
-            </nav>
-
-            <button class="btn-mobile" aria-label="Menu">☰</button>
-
-        </header>
-
-
-        <div class="hero">
-
-            <section id="sec-perfil">
-                <img src="img/perfil.png" alt="logo perfil" id="foto-perfil">
-            </section>
-
-            <section id="resumo-perfil">
-
-                <h2>Sobre Mim</h2>
-
-                <p>
-                    <strong>Técnico em TI & Desenvolvedor Full Stack em formação.</strong><br>
-                </p>
-
-                <p>
-                    Sou formado em Análise e Desenvolvimento de Sistemas e tenho experiência prática no "mundo real" da
-                    tecnologia. Durante meu estágio, atuei no atendimento de chamados (GLPI), configuração de
-                    redes/hardware e principalmente, na automação de tarefas repetitivas usando Python — eliminando
-                    erros e ganhando eficiência.
-                </p>
-
-                <p>
-                    Hoje, unindo essa vivência em infraestrutura com meu domínio em HTML, CSS, JavaScript e
-                    versionamento (Git), ofereço soluções completas e sob medida para pequenos negócios e
-                    empreendedores.
-                </p>
-
-                <p>
-                    <strong>O que posso fazer por você?</strong>
-                </p>
-
-                <ul style="list-style-type: disc;">
-                    <li>Criar um site profissional que venda sua imagem e funcione em qualquer dispositivo.</li>
-                    <li>Automatizar processos manuais, integrando sistemas e planilhas para você ganhar tempo.</li>
-                    <li>Resolver problemas técnicos com suporte remoto ágil, sem você precisar sair de casa.</li>
-                </ul>
-
-                <p>
-                    Minha missão é usar a tecnologia para descomplicar a sua rotina, com entregas rápidas, comunicação
-                    transparente e foco em resultados de verdade.
-                </p>
-
-            </section>
-
-            <section class="services" id="servicos">
-
-                <div class="container-serv">
-
-                    <h2 class="section-title">Meus Serviços</h2>
-                    <p class="section-subtitle">Conheça as soluções que ofereço para alavancar o seu negócio</p>
-
-                    <div class="services-grid">
-
-                        <!-- Card 1 -->
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <h3>Criação de Sites</h3>
-                            <p>
-                                Criação de landing pages, sites institucionais, blogs e muito mais, totalmente
-                                responsivos, com foco em performance,
-                                usabilidade e as melhores práticas do mercado com preços acessíveis.
-                            </p>
-                            <button onclick="abrirLink('Criação de sites')" class="service-link">Saiba mais →</button>
-                        </div>
-
-                        <!-- Card 2 -->
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fas fa-paint-brush"></i>
-                            </div>
-                            <h3>Automações</h3>
-                            <p>
-                                Criação de automações para tarefas repetitivas como enviar e-mails, organização de
-                                planilhas, geração de relatórios, visualização de dados, Web Scraping e muito mais
-                            </p>
-                            <button onclick="abrirLink('Automações')" class="service-link">Saiba mais →</button>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="service-card">
-                            <div class="icon-wrapper">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3>Suporte Remoto</h3>
-                            <p>
-                                Ofereço assistência técnica remota completa para pequenos negócios e empreendedores.
-                                Resolução de problemas de hospedagem/DNS, Configuração de E-mail Profissional,
-                                Manutenção preventiva (Atualizações de segurança e backups), Suporte via acesso remoto:
-                                Entro no seu computador (com sua autorização) e resolvo o problema na hora, sem
-                                burocracia.
-                            </p>
-                            <button onclick="abrirLink('Suporte remoto')" class="service-link">Saiba mais →</button>
-                        </div>
-
-                    </div>
-
+            <div class="about__skills reveal">
+              <h3 class="about__skills-title">Tecnologias</h3>
+              <div class="skills__grid">
+                <div class="skill-card">
+                  <svg viewBox="0 0 24 24" class="skill-card__icon"><path fill="currentColor" d="M3 2l1.6 18 7.4 2 7.4-2L21 2H3zm14.7 6H8.3l.2 2.4h8.9l-.7 7.8-4.7 1.3-4.7-1.3-.3-3.4h2.3l.2 1.8 2.5.7 2.5-.7.3-3.2H7.7l-.6-6.9h10.8l-.2 2z"/></svg>
+                  <span>HTML5</span>
                 </div>
-
-            </section>
-
+                <div class="skill-card">
+                  <svg viewBox="0 0 24 24" class="skill-card__icon"><path fill="currentColor" d="M3 2l1.6 18 7.4 2 7.4-2L21 2H3zm14.7 6H8.3l.2 2.4h8.9l-.7 7.8-4.7 1.3-4.7-1.3-.3-3.4h2.3l.2 1.8 2.5.7 2.5-.7.3-3.2H7.7l-.6-6.9h10.8l-.2 2z"/></svg>
+                  <span>CSS3</span>
+                </div>
+                <div class="skill-card">
+                  <svg viewBox="0 0 24 24" class="skill-card__icon"><path fill="currentColor" d="M3 3h18l-1.6 18L12 24l-7.4-3L3 3zm14.7 6H8.3l.2 2.4h8.9l-.7 7.8-4.7 1.3-4.7-1.3-.3-3.4h2.3l.2 1.8 2.5.7 2.5-.7.3-3.2H7.7l-.6-6.9h10.8l-.2 2z"/></svg>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                  <svg viewBox="0 0 24 24" class="skill-card__icon"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+                  <span>Git</span>
+                </div>
+                <div class="skill-card">
+                  <svg viewBox="0 0 24 24" class="skill-card__icon"><path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8z"/></svg>
+                  <span>GitHub</span>
+                </div>
+                <div class="skill-card">
+                  <svg viewBox="0 0 24 24" class="skill-card__icon"><path fill="currentColor" d="M12 2l-1 3 2 0 1-3-2 0zM7.5 5.5l2 3.5 1.5-1-2-3.5-1.5 1zm9 0l-2 3.5 1.5 1 2-3.5-1.5-1zM12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+                  <span>Python</span>
+                </div>
+                <div class="skill-card skill-card--learning">
+                  <svg viewBox="0 0 24 24" class="skill-card__icon"><path fill="currentColor" d="M12 2l-1 3 2 0 1-3-2 0zM7.5 5.5l2 3.5 1.5-1-2-3.5-1.5 1zm9 0l-2 3.5 1.5 1 2-3.5-1.5-1zM12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+                  <span>React <em>estudando</em></span>
+                </div>
+                <div class="skill-card skill-card--learning">
+                  <svg viewBox="0 0 24 24" class="skill-card__icon"><path fill="currentColor" d="M12 2l-1 3 2 0 1-3-2 0zM7.5 5.5l2 3.5 1.5-1-2-3.5-1.5 1zm9 0l-2 3.5 1.5 1 2-3.5-1.5-1zM12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+                  <span>Next.js <em>estudando</em></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
+      <!-- ===== SERVIÇOS ===== -->
+      <section class="section services" id="servicos">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__tag">02 — Serviços</span>
+            <h2 class="section__title">Como posso ajudar</h2>
+          </div>
 
-        <main>
+          <div class="services__grid">
+            <article class="service-card glass reveal">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h18v18H3V3zm2 2v14h14V5H5zm2 2h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2z"/></svg>
+              </div>
+              <h3>Criação de Sites</h3>
+              <p>Sites modernos, responsivos e otimizados — do landing page ao portfólio — construídos com HTML, CSS e JavaScript de alta performance.</p>
+              <button class="btn btn--link" data-service="sites">Saiba mais →</button>
+            </article>
 
-            <h2>Projetos</h2>
+            <article class="service-card glass reveal">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3 6 6 .9-4.5 4.4 1 6.2L12 16.5 6.5 19.5l1-6.2L3 8.9 9 8l3-6z"/></svg>
+              </div>
+              <h3>Automações</h3>
+              <p>Scripts e fluxos automatizados com Python para eliminar tarefas repetitivas e ganhar produtividade no seu dia a dia.</p>
+              <button class="btn btn--link" data-service="automacoes">Saiba mais →</button>
+            </article>
 
-            <section id="projetos">
-
-                <div> <!-- projeto aventura floresta react.js -->
-                    <img src="img/screenshot-aventura-f.png" alt="capa projeto" class="capa-codigo">
-                    <h3>Aventura na Floresta</h3>
-                    <p>Projeto aventura na floresta feito com React.Js usando lógica MDP de decisões da história</p>
-                    <p><a href="https://aventura-floresta.vercel.app/" target="_blank" rel="next">Link view <span><img
-                                    src="img/img-link.png" alt="img-link"></span></a>
-                    </p>
-                </div>
-
-                <div> <!-- projeto site curso em vídeo demo -->
-                    <img src="img/screenshot-site-curso.png" alt="capa projeto" class="capa-codigo">
-                    <h3>Site Curso em Vídeo</h3>
-                    <p>
-                        Projeto de site feito durante curso de git e github do Curso em Vídeo utilizando html e css,
-                        hospedado no github pages
-                    </p>
-                    <p><a href="https://rogin2005.github.io/projeto-site/" target="_blank" rel="next">Link view
-                            <span><img src="img/img-link.png" alt="img-link"></span></a></p>
-                </div>
-
-                <div> <!-- jogo adivinhação html, css, js no vercel -->
-                    <img src="img/screenshot-jogo-adv.png" alt="capa projeto" class="capa-codigo">
-                    <h3>Jogo de Adivinhação</h3>
-                    <p>Projeto jogo de adivinhação web feito com html, css e js</p>
-                    <p><a href="https://jogo-adivinhacao-lilac.vercel.app/" target="_blank" rel="next">Link view
-                            <span><img src="img/img-link.png" alt="img-link"></span></a></p>
-                </div>
-
-                <div> <!-- projeto nutri e vida page -->
-                    <img src="img/screenshot-nutri-e-vida.png" alt="capa projeto" class="capa-codigo">
-                    <h3>Blog Nutri & Vida</h3>
-                    <p>Projeto de blog sobre nutrição feito com html, css e js</p>
-                    <p><a href="https://nutri-e-vida.vercel.app/" target="_blank" rel="next">Link view
-                            <span><img src="img/img-link.png" alt="img-link"></span></a></p>
-                </div>
-
-                <div> <!-- projeto landing page n7team -->
-                    <img src="img/screenshot-n7team.png" alt="capa projeto" class="capa-codigo">
-                    <h3>N7team</h3>
-                    <p>Projeto de landing page para n7team com html, css e js</p>
-                    <p><a href="https://n7team.vercel.app/" target="_blank" rel="next">Link view
-                            <span><img src="img/img-link.png" alt="img-link"></span></a></p>
-                </div>
-
-            </section>
-
-
-
-            <h2 style="margin-top: 6rem;">Templates</h2>
-
-            <section id="templates">
-
-                <div> <!-- projeto aventura floresta react.js -->
-                    <img src="img/screenshot-m-nutri.png" alt="capa projeto" class="capa-codigo">
-                    <h3>Landing Nutri</h3>
-                    <p>
-                        Template de landing page para profissionais da saúde que pode ser facilmente adaptado para sua
-                        marca!
-                    </p>
-                    <p><a href="https://modelo-saude-puce.vercel.app/" target="_blank" rel="next">Link view <span><img
-                                    src="img/img-link.png" alt="img-link"></span></a>
-                        <button target="_blank" rel="next" class="btnzap" onclick="msgTemplate('Nutri')">Quero
-                            esse!</button>
-                    </p>
-
-                </div>
-
-                <div> <!-- projeto site curso em vídeo demo -->
-                    <img src="img/screenshot-m-estetica.png" alt="capa projeto" class="capa-codigo">
-                    <h3>Landing Estética</h3>
-                    <p>
-                        Template de landing page para profissionais da área de beleza e bem-estar que pode ser adaptado
-                        para o seu negócio!
-                    </p>
-                    <p>
-                        <a href="https://modelo-estetica-lac.vercel.app/" target="_blank" rel="next">Link view
-                            <span><img src="img/img-link.png" alt="img-link"></span></a>
-                        <button target="_blank" rel="next" class="btnzap" onclick="msgTemplate('Estética')">Quero
-                            esse!</button>
-                    </p>
-                </div>
-
-                <div> <!-- jogo adivinhação html, css, js no vercel -->
-                    <img src="img/screenshot-m-contabilidade.png" alt="capa projeto" class="capa-codigo">
-                    <h3>Landing Contabilidade</h3>
-                    <p>
-                        Template de landing page para profissionais da área de contabilidade e advocacia que pode ser
-                        adaptado para sua marca!
-                    </p>
-                    <p>
-                        <a href="https://modelo-contabilidade-theta.vercel.app/" target="_blank" rel="next">Link view
-                            <span><img src="img/img-link.png" alt="img-link"></span></a>
-                        <button target="_blank" rel="next" class="btnzap" onclick="msgTemplate('Contabilidade')">Quero
-                            esse!</button>
-                    </p>
-                </div>
-
-            </section>
-
-
-        </main>
-
-    </div> <!-- fim container -->
-
-    <footer>
-
-        <div>
-            <p>&copy; 2026 - Portfólio em constante evolução</p>
-            <p>Contato: rogerferreirasaraiva@gmail.com</p>
-            <p style="font-size: 0.9em; opacity: 0.8;">&#x1F680; Atualizado em Junho/2026</p>
+            <article class="service-card glass reveal">
+              <div class="service-card__icon">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <h3>Suporte Remoto</h3>
+              <p>Suporte técnico remoto para manutenção, atualizações e correções rápidas no seu site ou ambiente de desenvolvimento.</p>
+              <button class="btn btn--link" data-service="suporte">Saiba mais →</button>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div class="redes-social">
-            <a href="https://www.instagram.com/rogin_dev/" target="_blank" rel="noopener" aria-label="Instagram"><img
-                    src="img/icone-insta.png" width="30" alt="ico instagram"></a>
-            <a href="https://wa.me/5585996139725?text=Olá%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20serviços!"
-                target="_blank" rel="noopener" aria-label="WhatsApp"><img src="img/icone-whatsapp.png" width="30"
-                    alt="ico whatsApp"></a>
+      <!-- ===== PROJETOS ===== -->
+      <section class="section projects" id="projetos">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__tag">03 — Projetos</span>
+            <h2 class="section__title">Trabalhos selecionados</h2>
+          </div>
+
+          <div class="projects__grid">
+            <article class="project-card glass reveal">
+              <div class="project-card__screenshot">
+                <img src="" alt="Screenshot do projeto Portfólio Pessoal" loading="lazy" />
+                <span class="screenshot-placeholder">Inserir screenshot do projeto</span>
+              </div>
+              <div class="project-card__top">
+                <div class="project-card__dots"><span></span><span></span><span></span></div>
+                <div class="project-card__links">
+                  <a href="#" target="_blank" rel="noopener" aria-label="Ver código">Código</a>
+                  <a href="#" target="_blank" rel="noopener" aria-label="Ver demo">Demo</a>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3>Portfólio Pessoal</h3>
+                <p>Portfólio minimalista em dark mode com glassmorphism, animações de scroll e menu responsivo.</p>
+                <div class="tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Ver Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass reveal">
+              <div class="project-card__screenshot">
+                <img src="" alt="Screenshot do projeto Dashboard de Tarefas" loading="lazy" />
+                <span class="screenshot-placeholder">Inserir screenshot do projeto</span>
+              </div>
+              <div class="project-card__top">
+                <div class="project-card__dots"><span></span><span></span><span></span></div>
+                <div class="project-card__links">
+                  <a href="#" target="_blank" rel="noopener" aria-label="Ver código">Código</a>
+                  <a href="#" target="_blank" rel="noopener" aria-label="Ver demo">Demo</a>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3>Dashboard de Tarefas</h3>
+                <p>Aplicação de gerenciamento de tarefas com armazenamento local, filtros e interface fluida.</p>
+                <div class="tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">LocalStorage</span>
+                  <span class="tag">CSS Grid</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Ver Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass reveal">
+              <div class="project-card__screenshot">
+                <img src="" alt="Screenshot do projeto Bot de Automação" loading="lazy" />
+                <span class="screenshot-placeholder">Inserir screenshot do projeto</span>
+              </div>
+              <div class="project-card__top">
+                <div class="project-card__dots"><span></span><span></span><span></span></div>
+                <div class="project-card__links">
+                  <a href="#" target="_blank" rel="noopener" aria-label="Ver código">Código</a>
+                  <a href="#" target="_blank" rel="noopener" aria-label="Ver demo">Demo</a>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3>Bot de Automação</h3>
+                <p>Script em Python que automatiza tarefas repetitivas e gera relatórios em segundos.</p>
+                <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Automação</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Ver Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card glass reveal">
+              <div class="project-card__screenshot">
+                <img src="" alt="Screenshot do projeto Landing Page SaaS" loading="lazy" />
+                <span class="screenshot-placeholder">Inserir screenshot do projeto</span>
+              </div>
+              <div class="project-card__top">
+                <div class="project-card__dots"><span></span><span></span><span></span></div>
+                <div class="project-card__links">
+                  <a href="#" target="_blank" rel="noopener" aria-label="Ver código">Código</a>
+                  <a href="#" target="_blank" rel="noopener" aria-label="Ver demo">Demo</a>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3>Landing Page SaaS</h3>
+                <p>Página de conversão para um produto SaaS com seções animadas e formulário integrado.</p>
+                <div class="tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-card__actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Ver Código</a>
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
+      <!-- ===== TEMPLATES ===== -->
+      <section class="section templates" id="templates">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__tag">04 — Templates</span>
+            <h2 class="section__title">Modelos prontos para o seu nicho</h2>
+            <p class="section__sub">Sites profissionais prontos para personalizar e publicar. Escolha um modelo e entre em contato.</p>
+          </div>
+
+          <div class="templates__grid">
+            <article class="template-card glass reveal">
+              <div class="template-card__screenshot">
+                <img src="" alt="Screenshot do template para Advogados" loading="lazy" />
+                <span class="screenshot-placeholder">Inserir screenshot do template</span>
+              </div>
+              <div class="template-card__body">
+                <div class="template-card__badge">Advocacia</div>
+                <h3>Template para Advogados</h3>
+                <p>Site institucional para escritórios de advocacia com áreas de atuação, equipe e formulário de consulta.</p>
+                <div class="tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="template-card__actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Ver Demo</a>
+                  <a href="#contato" class="btn btn--ghost btn--sm">Comprar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="template-card glass reveal">
+              <div class="template-card__screenshot">
+                <img src="" alt="Screenshot do template para Restaurantes" loading="lazy" />
+                <span class="screenshot-placeholder">Inserir screenshot do template</span>
+              </div>
+              <div class="template-card__body">
+                <div class="template-card__badge">Gastronomia</div>
+                <h3>Template para Restaurantes</h3>
+                <p>Cardápio digital, galeria de pratos, reservas online e informações de contato em um site elegante.</p>
+                <div class="tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="template-card__actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Ver Demo</a>
+                  <a href="#contato" class="btn btn--ghost btn--sm">Comprar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="template-card glass reveal">
+              <div class="template-card__screenshot">
+                <img src="" alt="Screenshot do template para Personal Trainers" loading="lazy" />
+                <span class="screenshot-placeholder">Inserir screenshot do template</span>
+              </div>
+              <div class="template-card__body">
+                <div class="template-card__badge">Fitness</div>
+                <h3>Template para Personal Trainer</h3>
+                <p>Página de serviços, planos de treino, depoimentos de alunos e agendamento de consultas.</p>
+                <div class="tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="template-card__actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Ver Demo</a>
+                  <a href="#contato" class="btn btn--ghost btn--sm">Comprar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="template-card glass reveal">
+              <div class="template-card__screenshot">
+                <img src="" alt="Screenshot do template para Clínicas" loading="lazy" />
+                <span class="screenshot-placeholder">Inserir screenshot do template</span>
+              </div>
+              <div class="template-card__body">
+                <div class="template-card__badge">Saúde</div>
+                <h3>Template para Clínica</h3>
+                <p>Site para clínicas e consultórios com especialidades, equipe médica e agendamento online.</p>
+                <div class="tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="template-card__actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Ver Demo</a>
+                  <a href="#contato" class="btn btn--ghost btn--sm">Comprar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="template-card glass reveal">
+              <div class="template-card__screenshot">
+                <img src="" alt="Screenshot do template para Fotógrafos" loading="lazy" />
+                <span class="screenshot-placeholder">Inserir screenshot do template</span>
+              </div>
+              <div class="template-card__body">
+                <div class="template-card__badge">Criativo</div>
+                <h3>Template para Fotógrafos</h3>
+                <p>Portfólio visual com galeria de trabalhos, pacotes de serviços e formulário de orçamento.</p>
+                <div class="tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="template-card__actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Ver Demo</a>
+                  <a href="#contato" class="btn btn--ghost btn--sm">Comprar</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="template-card glass reveal">
+              <div class="template-card__screenshot">
+                <img src="" alt="Screenshot do template para E-commerce" loading="lazy" />
+                <span class="screenshot-placeholder">Inserir screenshot do template</span>
+              </div>
+              <div class="template-card__body">
+                <div class="template-card__badge">Varejo</div>
+                <h3>Template para E-commerce</h3>
+                <p>Vitrine de produtos, carrinho, checkout e painel de pedidos. Pronto para sua loja online.</p>
+                <div class="tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <div class="template-card__actions">
+                  <a href="#" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Ver Demo</a>
+                  <a href="#contato" class="btn btn--ghost btn--sm">Comprar</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTATO ===== -->
+      <section class="section contact" id="contato">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="section__tag">05 — Contato</span>
+            <h2 class="section__title">Vamos conversar</h2>
+            <p class="section__sub">Disponível para projetos freelance e colaborações.</p>
+          </div>
+
+          <div class="contact__grid reveal">
+            <a href="mailto:roger@email.com" class="contact-card glass">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div>
+                <span class="contact-card__label">E-mail</span>
+                <span class="contact-card__value">roger@email.com</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact-card glass">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.6 5 .3.3.6.9.6 1.8v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+              </div>
+              <div>
+                <span class="contact-card__label">GitHub</span>
+                <span class="contact-card__value">@roger</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-card glass">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.3 18.3v-8H5.7v8h2.6zM7 9.1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm11.3 9.2v-4.4c0-2.3-1.2-3.3-2.8-3.3-1.3 0-1.9.7-2.2 1.2v-1H10.7v8h2.6v-4.5c0-1.2.5-1.8 1.4-1.8.8 0 1.2.5 1.2 1.8v4.5h2.4z"/></svg>
+              </div>
+              <div>
+                <span class="contact-card__label">LinkedIn</span>
+                <span class="contact-card__value">/in/roger</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="contact-card glass">
+              <div class="contact-card__icon">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.8.8-2.8-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5l.4-.5c.1-.1.1-.3 0-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.7 2.6 4.1 3.6 1.5.6 2 .7 2.7.6.4-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
+              </div>
+              <div>
+                <span class="contact-card__label">WhatsApp</span>
+                <span class="contact-card__value">Fale comigo</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Roger. Feito com HTML, CSS e JavaScript puro.</p>
+        <a href="#inicio" class="footer__top">Voltar ao topo ↑</a>
+      </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- ===== MODAL (Saiba mais) ===== -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal__overlay" data-close></div>
+      <div class="modal__panel glass">
+        <button class="modal__close" data-close aria-label="Fechar">×</button>
+        <h3 id="modal-title"></h3>
+        <p id="modal-text"></p>
+        <a href="#contato" class="btn btn--primary" data-close>Entrar em contato</a>
+      </div>
+    </div>
 
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

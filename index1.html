@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div class="container"> <!-- inicio container -->
+
+        <header>
+
+            <div style="display: flex; gap: 10px;">
+                <img src="img/logo-perfil.png" width="70" height="70" alt="logo-perfil">
+                <h2>Roger Dev</h2>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#resumo-perfil">Sobre mim</a></li>
+                    <li><a href="https://github.com/rogin2005" target="_blank" rel="next">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/roger-ferreira-saraiva-0847b22b3/" target="_blank"
+                            rel="next">Linkedin</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn-mobile" aria-label="Menu">☰</button>
+
+        </header>
+
+
+        <div class="hero">
+
+            <section id="sec-perfil">
+                <img src="img/perfil.png" alt="logo perfil" id="foto-perfil">
+            </section>
+
+            <section id="resumo-perfil">
+
+                <h2>Sobre Mim</h2>
+
+                <p>
+                    <strong>Técnico em TI & Desenvolvedor Full Stack em formação.</strong><br>
+                </p>
+
+                <p>
+                    Sou formado em Análise e Desenvolvimento de Sistemas e tenho experiência prática no "mundo real" da
+                    tecnologia. Durante meu estágio, atuei no atendimento de chamados (GLPI), configuração de
+                    redes/hardware e principalmente, na automação de tarefas repetitivas usando Python — eliminando
+                    erros e ganhando eficiência.
+                </p>
+
+                <p>
+                    Hoje, unindo essa vivência em infraestrutura com meu domínio em HTML, CSS, JavaScript e
+                    versionamento (Git), ofereço soluções completas e sob medida para pequenos negócios e
+                    empreendedores.
+                </p>
+
+                <p>
+                    <strong>O que posso fazer por você?</strong>
+                </p>
+
+                <ul style="list-style-type: disc;">
+                    <li>Criar um site profissional que venda sua imagem e funcione em qualquer dispositivo.</li>
+                    <li>Automatizar processos manuais, integrando sistemas e planilhas para você ganhar tempo.</li>
+                    <li>Resolver problemas técnicos com suporte remoto ágil, sem você precisar sair de casa.</li>
+                </ul>
+
+                <p>
+                    Minha missão é usar a tecnologia para descomplicar a sua rotina, com entregas rápidas, comunicação
+                    transparente e foco em resultados de verdade.
+                </p>
+
+            </section>
+
+            <section class="services" id="servicos">
+
+                <div class="container-serv">
+
+                    <h2 class="section-title">Meus Serviços</h2>
+                    <p class="section-subtitle">Conheça as soluções que ofereço para alavancar o seu negócio</p>
+
+                    <div class="services-grid">
+
+                        <!-- Card 1 -->
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Criação de Sites</h3>
+                            <p>
+                                Criação de landing pages, sites institucionais, blogs e muito mais, totalmente
+                                responsivos, com foco em performance,
+                                usabilidade e as melhores práticas do mercado com preços acessíveis.
+                            </p>
+                            <button onclick="abrirLink('Criação de sites')" class="service-link">Saiba mais →</button>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3>Automações</h3>
+                            <p>
+                                Criação de automações para tarefas repetitivas como enviar e-mails, organização de
+                                planilhas, geração de relatórios, visualização de dados, Web Scraping e muito mais
+                            </p>
+                            <button onclick="abrirLink('Automações')" class="service-link">Saiba mais →</button>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="service-card">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Suporte Remoto</h3>
+                            <p>
+                                Ofereço assistência técnica remota completa para pequenos negócios e empreendedores.
+                                Resolução de problemas de hospedagem/DNS, Configuração de E-mail Profissional,
+                                Manutenção preventiva (Atualizações de segurança e backups), Suporte via acesso remoto:
+                                Entro no seu computador (com sua autorização) e resolvo o problema na hora, sem
+                                burocracia.
+                            </p>
+                            <button onclick="abrirLink('Suporte remoto')" class="service-link">Saiba mais →</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <main>
+
+            <h2>Projetos</h2>
+
+            <section id="projetos">
+
+                <div> <!-- projeto aventura floresta react.js -->
+                    <img src="img/screenshot-aventura-f.png" alt="capa projeto" class="capa-codigo">
+                    <h3>Aventura na Floresta</h3>
+                    <p>Projeto aventura na floresta feito com React.Js usando lógica MDP de decisões da história</p>
+                    <p><a href="https://aventura-floresta.vercel.app/" target="_blank" rel="next">Link view <span><img
+                                    src="img/img-link.png" alt="img-link"></span></a>
+                    </p>
+                </div>
+
+                <div> <!-- projeto site curso em vídeo demo -->
+                    <img src="img/screenshot-site-curso.png" alt="capa projeto" class="capa-codigo">
+                    <h3>Site Curso em Vídeo</h3>
+                    <p>
+                        Projeto de site feito durante curso de git e github do Curso em Vídeo utilizando html e css,
+                        hospedado no github pages
+                    </p>
+                    <p><a href="https://rogin2005.github.io/projeto-site/" target="_blank" rel="next">Link view
+                            <span><img src="img/img-link.png" alt="img-link"></span></a></p>
+                </div>
+
+                <div> <!-- jogo adivinhação html, css, js no vercel -->
+                    <img src="img/screenshot-jogo-adv.png" alt="capa projeto" class="capa-codigo">
+                    <h3>Jogo de Adivinhação</h3>
+                    <p>Projeto jogo de adivinhação web feito com html, css e js</p>
+                    <p><a href="https://jogo-adivinhacao-lilac.vercel.app/" target="_blank" rel="next">Link view
+                            <span><img src="img/img-link.png" alt="img-link"></span></a></p>
+                </div>
+
+                <div> <!-- projeto nutri e vida page -->
+                    <img src="img/screenshot-nutri-e-vida.png" alt="capa projeto" class="capa-codigo">
+                    <h3>Blog Nutri & Vida</h3>
+                    <p>Projeto de blog sobre nutrição feito com html, css e js</p>
+                    <p><a href="https://nutri-e-vida.vercel.app/" target="_blank" rel="next">Link view
+                            <span><img src="img/img-link.png" alt="img-link"></span></a></p>
+                </div>
+
+                <div> <!-- projeto landing page n7team -->
+                    <img src="img/screenshot-n7team.png" alt="capa projeto" class="capa-codigo">
+                    <h3>N7team</h3>
+                    <p>Projeto de landing page para n7team com html, css e js</p>
+                    <p><a href="https://n7team.vercel.app/" target="_blank" rel="next">Link view
+                            <span><img src="img/img-link.png" alt="img-link"></span></a></p>
+                </div>
+
+            </section>
+
+
+
+            <h2 style="margin-top: 6rem;">Templates</h2>
+
+            <section id="templates">
+
+                <div> <!-- projeto aventura floresta react.js -->
+                    <img src="img/screenshot-m-nutri.png" alt="capa projeto" class="capa-codigo">
+                    <h3>Landing Nutri</h3>
+                    <p>
+                        Template de landing page para profissionais da saúde que pode ser facilmente adaptado para sua
+                        marca!
+                    </p>
+                    <p><a href="https://modelo-saude-puce.vercel.app/" target="_blank" rel="next">Link view <span><img
+                                    src="img/img-link.png" alt="img-link"></span></a>
+                        <button target="_blank" rel="next" class="btnzap" onclick="msgTemplate('Nutri')">Quero
+                            esse!</button>
+                    </p>
+
+                </div>
+
+                <div> <!-- projeto site curso em vídeo demo -->
+                    <img src="img/screenshot-m-estetica.png" alt="capa projeto" class="capa-codigo">
+                    <h3>Landing Estética</h3>
+                    <p>
+                        Template de landing page para profissionais da área de beleza e bem-estar que pode ser adaptado
+                        para o seu negócio!
+                    </p>
+                    <p>
+                        <a href="https://modelo-estetica-lac.vercel.app/" target="_blank" rel="next">Link view
+                            <span><img src="img/img-link.png" alt="img-link"></span></a>
+                        <button target="_blank" rel="next" class="btnzap" onclick="msgTemplate('Estética')">Quero
+                            esse!</button>
+                    </p>
+                </div>
+
+                <div> <!-- jogo adivinhação html, css, js no vercel -->
+                    <img src="img/screenshot-m-contabilidade.png" alt="capa projeto" class="capa-codigo">
+                    <h3>Landing Contabilidade</h3>
+                    <p>
+                        Template de landing page para profissionais da área de contabilidade e advocacia que pode ser
+                        adaptado para sua marca!
+                    </p>
+                    <p>
+                        <a href="https://modelo-contabilidade-theta.vercel.app/" target="_blank" rel="next">Link view
+                            <span><img src="img/img-link.png" alt="img-link"></span></a>
+                        <button target="_blank" rel="next" class="btnzap" onclick="msgTemplate('Contabilidade')">Quero
+                            esse!</button>
+                    </p>
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div> <!-- fim container -->
+
+    <footer>
+
+        <div>
+            <p>&copy; 2026 - Portfólio em constante evolução</p>
+            <p>Contato: rogerferreirasaraiva@gmail.com</p>
+            <p style="font-size: 0.9em; opacity: 0.8;">&#x1F680; Atualizado em Junho/2026</p>
+        </div>
+
+        <div class="redes-social">
+            <a href="https://www.instagram.com/rogin_dev/" target="_blank" rel="noopener" aria-label="Instagram"><img
+                    src="img/icone-insta.png" width="30" alt="ico instagram"></a>
+            <a href="https://wa.me/5585996139725?text=Olá%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20serviços!"
+                target="_blank" rel="noopener" aria-label="WhatsApp"><img src="img/icone-whatsapp.png" width="30"
+                    alt="ico whatsApp"></a>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
